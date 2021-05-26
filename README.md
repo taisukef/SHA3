@@ -1,15 +1,16 @@
 # js-sha3
 
+<!--
 [![Build Status](https://travis-ci.org/emn178/js-sha3.svg?branch=master)](https://travis-ci.org/emn178/js-sha3)
 [![Coverage Status](https://coveralls.io/repos/emn178/js-sha3/badge.svg?branch=master)](https://coveralls.io/r/emn178/js-sha3?branch=master)  
 [![NPM](https://nodei.co/npm/js-sha3.png?stars&downloads)](https://nodei.co/npm/js-sha3/)
+-->
 
 A simple SHA-3 / Keccak / Shake hash function for JavaScript supports UTF-8 encoding.
 
 ## Notice
 * v0.8.0+ will throw an error if try to update hash after finalize.
 * Sha3 methods has been renamed to keccak since v0.2.0. It means that sha3 methods of v0.1.x are equal to keccak methods of v0.2.x and later.
-* `buffer` method is deprecated. This maybe confuse with Buffer in node.js. Please use `arrayBuffer` instead.
 
 ## Demo
 [SHA3-512 Online](http://emn178.github.io/online-tools/sha3_512.html)  
@@ -27,17 +28,16 @@ A simple SHA-3 / Keccak / Shake hash function for JavaScript supports UTF-8 enco
 [Compress](https://raw.github.com/emn178/js-sha3/master/build/sha3.min.js)  
 [Uncompress](https://raw.github.com/emn178/js-sha3/master/src/sha3.js)
 
-## Installation
-You can also install js-sha3 by using Bower.
-
-    bower install js-sha3
-
-For node.js, you can use this command to install:
-
-    npm install js-sha3
-
 ## Usage
 You could use like this:
+```JavaScript
+import { SHA3 } from "./SHA3.js";
+
+console.log(SHA3.sha3_512('Message to hash'));
+console.log(SHA3.keccak512('Message to hash'));
+```
+
+## Sample code
 ```JavaScript
 sha3_512('Message to hash');
 sha3_384('Message to hash');
@@ -100,10 +100,6 @@ cshake128 = require('js-sha3').cshake128;
 cshake256 = require('js-sha3').cshake256;
 kmac128 = require('js-sha3').kmac128;
 kmac256 = require('js-sha3').kmac256;
-```
-If you use TypeScript, you can import like this:
-```TypeScript
-import { sha3_512 } from 'js-sha3';
 ```
 
 ## Example

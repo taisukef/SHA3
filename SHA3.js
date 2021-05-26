@@ -7,8 +7,6 @@
  * @license MIT
  */
 /*jslint bitwise: true */
-(function () {
-  'use strict';
 
   var INPUT_ERROR = 'input is invalid type';
   var FINALIZE_ERROR = 'finalize already called';
@@ -641,6 +639,10 @@
     }
   };
 
+const SHA3 = methods;
+export { SHA3 };
+/*
+  console.log(methods);
   if (COMMON_JS) {
     module.exports = methods;
   } else {
@@ -653,4 +655,4 @@
       });
     }
   }
-})();
+*/
