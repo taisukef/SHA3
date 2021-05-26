@@ -76,23 +76,6 @@ var hash = cshake128.create(256, 'function name', 'customization');
 // specify kmac key, output bits and customization when creating
 var hash = kmac128.create('key', 256, 'customization');
 ```
-If you use node.js, you should require the module first:
-```JavaScript
-sha3_512 = require('js-sha3').sha3_512;
-sha3_384 = require('js-sha3').sha3_384;
-sha3_256 = require('js-sha3').sha3_256;
-sha3_224 = require('js-sha3').sha3_224;
-keccak512 = require('js-sha3').keccak512;
-keccak384 = require('js-sha3').keccak384;
-keccak256 = require('js-sha3').keccak256;
-keccak224 = require('js-sha3').keccak224;
-shake128 = require('js-sha3').shake128;
-shake256 = require('js-sha3').shake256;
-cshake128 = require('js-sha3').cshake128;
-cshake256 = require('js-sha3').cshake256;
-kmac128 = require('js-sha3').kmac128;
-kmac256 = require('js-sha3').kmac256;
-```
 
 ## Example
 Code
