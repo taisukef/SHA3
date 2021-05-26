@@ -8,10 +8,6 @@
 
 A simple SHA-3 / Keccak / Shake hash function for JavaScript supports UTF-8 encoding.
 
-## Notice
-* v0.8.0+ will throw an error if try to update hash after finalize.
-* Sha3 methods has been renamed to keccak since v0.2.0. It means that sha3 methods of v0.1.x are equal to keccak methods of v0.2.x and later.
-
 ## Demo
 [SHA3-512 Online](http://emn178.github.io/online-tools/sha3_512.html)  
 [SHA3-384 Online](http://emn178.github.io/online-tools/sha3_384.html)  
@@ -24,14 +20,10 @@ A simple SHA-3 / Keccak / Shake hash function for JavaScript supports UTF-8 enco
 [Shake128 Online](http://emn178.github.io/online-tools/shake_128.html)  
 [Shake256 Online](http://emn178.github.io/online-tools/shake_256.html)  
 
-## Download
-[Compress](https://raw.github.com/emn178/js-sha3/master/build/sha3.min.js)  
-[Uncompress](https://raw.github.com/emn178/js-sha3/master/src/sha3.js)
-
 ## Usage
 You could use like this:
 ```JavaScript
-import { SHA3 } from "./SHA3.js";
+import { SHA3 } from "https://taisukef.github.io/SHA3/SHA3.js";
 
 console.log(SHA3.sha3_512('Message to hash'));
 console.log(SHA3.keccak512('Message to hash'));
